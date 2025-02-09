@@ -1,11 +1,11 @@
-const express = require('express');
-const axios = require('axios');
+import express from 'express';
+import axios from 'axios'; // השתמש ב-import במקום require
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Replace with your actual Render API token
-const RENDER_API_TOKEN = process.env.API_KEY;
+const RENDER_API_TOKEN = "rnd_jwbOVcyq3FZhOVj6Taiv08V5Mz36";
 
 // Endpoint to get installed applications
 app.get('/', async (req, res) => {
